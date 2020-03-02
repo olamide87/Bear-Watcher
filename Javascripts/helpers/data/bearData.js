@@ -1,5 +1,16 @@
 //array
 
-const arrayBear = [
-    
+const Bear = [
+
 ]
+
+
+
+const getDeadPersons = () => {
+    return Bear.filter((x) => x.isDead === true);
+};
+
+
+
+
+
