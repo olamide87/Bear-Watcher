@@ -6,9 +6,14 @@ const Bear = [
 
 
 
-const getDeadPersons = () => {
-    return Bear.filter((x) => x.isDead === true);
-};
+const setSelectedBears = (newBear) => {
+    Bear.push(newBear);
+  };
+
+
+
+export default { getBears }
+
 
 
 
