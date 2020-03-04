@@ -4,6 +4,11 @@ const Bear = [
 
 ]
 
+const getBears = () => {
+    return Bear
+
+}
+
 
 
 const setSelectedBears = (newBear) => {
@@ -12,7 +17,7 @@ const setSelectedBears = (newBear) => {
 
 
 
-export default { getBears }
+export default { getBears, setSelectedBears }
 
 
 
