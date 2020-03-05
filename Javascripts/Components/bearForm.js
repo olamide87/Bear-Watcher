@@ -11,23 +11,24 @@ const bearBuilder = () => {
 //const persons = bearData.getDeadPersons();
 let domstring = '';
 
-domstring += '<form id="bearForm" >'
+domstring += '<form class="col-6 mx-auto text-center" id="bearForm" >'
 domstring += '<div class="form-group">';
-domstring += '<label for="">Bear Name</label>';
+domstring += '<label class="text-center" for="">Bear Name</label>';
 domstring += '<input type="" class="form-control" id="name" aria-describedby="emailHelp">';
-domstring += '<small id="emailHelp" class="form-text text-muted"></small>';
+
 domstring += '</div>';
 domstring += '<div class="form-group">';
-domstring += '<label for="image">Image Url</label>';
+domstring += '<label class="" for="image">Image Url</label>';
 domstring += '<input type="" class="form-control" id="imageUrl">';
 domstring += '</div>';
 domstring += '<button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>';
 domstring += '</form>';
-
 utils.printToDom('bear-form', domstring)
+eventListener();
 };
 
-  const addBear = () => {
+  const addBear = (e) => {
+      e.preventDefault();
       const bearName = document.getElementById('name').value
       const bearImage = document.getElementById('imageUrl').value
       bearData.setSelectedBears({name:bearName, imageUrl:bearImage});
@@ -47,4 +48,4 @@ utils.printToDom('bear-form', domstring)
     
 
 
-export default { bearBuilder }
+export default { bearBuilder, eventListener }
