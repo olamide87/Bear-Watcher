@@ -7,10 +7,10 @@ const riverBuilder = () => {
     
   let domstring = '';
   allBears.forEach((bears) => {
-  domstring += '<div class="card" style="width: 18rem;">';
+  domstring += '<div class="card m-5 col-3" style="width: 18rem;">';
   domstring += `<img src= "${bears.imageUrl}" class="card-img-top" alt="...">`;
   domstring += '<div class="card-body">';
-  domstring += `<p class="card-text">"${bears.name}".</p>`;
+  domstring += `<p class="card-text text-center">"${bears.name}".</p>`;
   domstring += '</div>';
   domstring += '</div>';
   });

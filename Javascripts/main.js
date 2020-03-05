@@ -3,9 +3,9 @@ import utils from "./helpers/utils.js";
 
 
 const init = () => {
-   bearForm.bearBuilder();
-   utils.printToDom();
-   addEventListener();
+
+bearForm.bearBuilder();
+  
 };
 
 init();
