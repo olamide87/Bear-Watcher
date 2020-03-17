@@ -1,7 +1,21 @@
 body {
+    color: white;
     background-color: salmon;
+    background-image: url('https://i.pinimg.com/originals/fb/0e/2d/fb0e2de3f0508537d934cc66af7496e9.jpg');
 }
 
 .beartitle {
     text-align: center;
+}
+
+.river {
+    flex-wrap: wrap;
+}
+
+form {
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.card-text {
+    color: black;
 }
